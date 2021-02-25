@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - Style Guide</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+  	<header>
+  		<h1>Project 01 - Style Guide</h1>
+
+  		<nav class="menu">
+  			<div class="menu_item"><a href="index.html">HOME</a></div>
+  			<div class="menu_item"><a href="products.html">PRODUCTS</a></div>
+  			<div class="menu_item"><a href="checkout.html">CART</a></div>
+  			<div class="menu_item"><a href="about.html">ABOUT</a></div>
+  		</nav>
+
+      <p>A template you can use to start building out your own style guides with.</p>
+
+      <nav class="guide">        
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="product_listing.html">Product Listing Template</a>
+        <a href="checkout.html">Checkout Template</a>
+        <a href="#branding_ideas">Branding Ideas</a>
+        <a href="#branding_components">Branding Components</a>
+        <a href="#citations">Citations</a>
+      </nav>
+  	</header>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!-- In-text link styling section -->
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <div class="element_content">
+          <h4>CSS selector</h4>
+          <p>.intext_link</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;p&gt;This is an &lt;a href="#" class="intext_link"&gt;in-text link&lt;/a&gt;.&lt;/p&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <p>This is an <a href="#" class="intext_link">in-text link</a>.</p>
+        </div>
+        
+      </section>
+
+      <!-- Default Button styling section -->
+      <section class="element">
+        <h3>Navigation Link</h3>
+
+        <div class="element_content">
+
+          <h4>CSS selector:</h4>
+          <p>.button_nav</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="button_container"&gt; <br>&nbsp;
+              &lt;a href="#interactive_elements" class="button_nav">Learn More&lt;/a&gt; <br>
+            &lt;/div&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <div class="button_container">
+            <a href="#interactive_elements" class="button_nav">Learn More</a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Submit/Reset Button section -->
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <div class="element_content">
+          <h4>CSS selector:</h4>
+          <p>.button_subres</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="button_container"&gt; <br>&nbsp;
+              &lt;a href="#interactive_elements" class="button_subres">Submit&lt;/a&gt; <br>&nbsp;
+              &lt;a href="#interactive_elements" class="button_subres">Reset&lt;/a&gt;<br>
+            &lt;/div&gt;
+          </code>
+
+          <h4>Rendered element</h4>
+          <div class="button_container">
+            <a href="#interactive_elements" class="button_subres">Submit</a>
+            <a href="#interactive_elements" class="button_subres">Reset</a>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- Text input and label section -->
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <div class="element_content">
+          <h4>CSS selector:</h4>
+          <p>#text_input</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;label for="text_input"&gt;Input:&lt;/label&gt;</code>
+          <code>&lt;input type="text" id="text_input" name="text_input"&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <label for="text_input">Account:</label>
+          <input type="text" id="text_input" name="text_input">
+        </div>
+        
+      </section>
+
+      <!-- Radio button section -->
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <div class="element_content">
+          <h4>CSS selector</h4>
+          <p>#USA</p>
+          <p>#Canada</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;p&gt;Please select your country:&lt;/p&gt; <br>
+            &lt;input type="radio" id="USA" name="country" value="USA"&gt; <br>
+            &lt;label for="USA"&gt;USA&lt;/label&gt; <br>
+            &lt;input type="radio" id="Canada" name="country" value="Canada"&gt; <br>
+            &lt;label for="Canada"&gt;Canada&lt;/label&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <p>Please select your country:</p>
+          <input type="radio" id="USA" name="country" value="USA">
+          <label for="USA">USA</label> <br>
+          <input type="radio" id="Canada" name="country" value="Canada">
+          <label for="Canada">Canada</label>
+        </div>
+
+      </section>
+
+      <!-- Image link section -->
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <div class="element_content">
+          <h4>CSS selector:</h4>
+          <p>.img_link</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#"&gt;&lt;img class="img_link" src="images/image_link.png" alt="an image of old tv as a link"&gt;&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a href="#"><img class="img_link" src="images/image_link.png" alt="an image as a link"></a>
+        </div>
+
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <!-- 4 levels of heading section -->
+      <section class="element">
+        <h3>Headings</h3>
+
+        <div class="element_content">
+          <h4>CSS selector:</h4>
+          <p>h1.level1<br>h2.level2<br>h3.level3<br>h4.level4</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;h1 class="level1"&gt;Main Title&lt;/h1&gt; <br>
+            &lt;h2 class="level2"&gt;Sub Main Title&lt;/h2&gt; <br>
+            &lt;h3 class="level3"&gt;Section Title&lt;/h3&gt; <br>
+            &lt;h4 class="level4"&gt;Sub Section Title&lt;/h4&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <h1 class="level1">Main Title</h1>
+          <h2 class="level2">Sub Main Title</h2>
+          <h3 class="level3">Section Title</h3>
+          <h4 class="level4">Sub Section Title</h4>
+        </div>
+        
+      </section>
+
+      <!-- Paragraphs section -->
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <div class="element_content">
+          <h4>CSS selector:</h4>
+          <p>.main_text</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;p class="main_text"&gt;Given your first project requires you to build out a complete styleguide including a series of web elements, your first code task is to build out the HTML for a portion of the styleguide. To help guide you in this process — and to introduce you to the 'code tasks' for the course — we have some basic rules to set up:&lt;/p&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <p class="main_text">Given your first project requires you to build out a complete styleguide including a series of web elements, your first code task is to build out the HTML for a portion of the styleguide. To help guide you in this process — and to introduce you to the 'code tasks' for the course — we have some basic rules to set up:</p>
+        </div>
+        
+      </section>
+
+      <!-- Numbered list section -->
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <div class="element_content">
+          <h4>CSS selector:</h4>
+          <p>.ordered_list</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;ol class="ordered_list"&gt; <br>&nbsp;
+              &lt;li&gt;SANTAL 33&lt;/li&gt; <br>&nbsp;
+              &lt;li&gt;ANOTHER 13&lt;/li&gt; <br>&nbsp;
+              &lt;li&gt;TONKA 25&lt;/li&gt; <br>&nbsp;
+              &lt;li&gt;THE NOIR 29&lt;/li&gt; <br>
+            &lt;/ol&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <ol class="ordered_list">
+            <li>SANTAL 33</li>
+            <li>ANOTHER 13</li>
+            <li>TONKA 25</li>
+            <li>THE NOIR 29</li>
+          </ol>
+        </div>
+        
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <!-- Navigation menu section -->
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <div class="element_content">
+          <h4>CSS selector:</h4>
+          <p>.menu<br>.menu_item</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;nav class="menu"> <br>&nbsp;
+              &lt;div class="menu_item&gt;&lt;a href="#combined_elements">HOME&lt;/a&gt;&lt;/div&gt; <br>&nbsp;
+              &lt;div class="menu_item&gt;&lt;a href="#combined_elements"&gt;NEW ARRIVALS&lt;/a&gt;&lt;/div&gt; <br>&nbsp;
+              &lt;div class="menu_item"&gt;&lt;a href="#combined_elements"&gt;BEST SELLERS&lt;/av&lt;/div&gt; <br>&nbsp;
+              &lt;div class="menu_item"&gt;&lt;a href="#combined_elements"&gt;CART&lt;/a&gt;&lt;/div&gt; <br>&nbsp;
+              &lt;div class="menu_item"&gt;&lt;a href="#combined_elements"&gt;ABOUT A'Z&lt;/a&gt;&lt;/div&gt; <br>
+            &lt;/nav&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <nav class="menu">
+            <div class="menu_item"><a href="#combined_elements">HOME</a></div>
+            <div class="menu_item"><a href="#combined_elements">NEW ARRIVALS</a></div>
+            <div class="menu_item"><a href="#combined_elements">BEST SELLERS</a></div>
+            <div class="menu_item"><a href="#combined_elements">CART</a></div>
+            <div class="menu_item"><a href="#combined_elements">ABOUT A'Z</a></div>
+          </nav>
+        </div>
+        
+      </section>
+
+      <!-- Product list section -->
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+        <div class="element_content">
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="single_product&gt;<br>&nbsp;
+              &lt;div class="pic_box&gt; <br>&nbsp;&nbsp;
+                &lt;img src="images/perfume.jpg" alt="the picture of SANTAL 33&gt; <br>&nbsp;
+              &lt;/div&gt; <br><br>&nbsp;
+
+              &lt;div class="product_name"&gt; <br>&nbsp;&nbsp;
+                &lt;h4&gt;SANTAL 33&lt;/h4&gt; <br>&nbsp;
+              &lt;/div&gt; <br><br>&nbsp;
+
+              &lt;div class="product_info"&gt; <br>&nbsp;&nbsp;
+                &lt;p&gt;50 ml / 1.7 fl oz / CAD $225.00&lt;/p&gt; <br>&nbsp;
+              &lt;/div> <br><br>&nbsp;
+
+              &lt;div class="to_cart"&gt; <br>&nbsp;&nbsp;
+                &lt;p&gt;Add to cart&lt;/p&gt; <br>&nbsp;
+              &lt;/div&gt; <br>
+            &lt;/div&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+
+          <div class="products_list">
+          	<div class="single_product">
+	            <div class="pic_box">
+	              <img src="images/perfume.jpg" alt="the picture of SANTAL 33">
+	            </div>
+
+	            <div class="product_name">
+	              <h4>SANTAL 33</h4>
+	            </div>
+
+	            <div class="product_info">
+	              <p>50 ml / 1.7 fl oz / CAD $225.00</p>
+	            </div>
+
+	            <div class="to_cart">
+	              <p>Add to cart</p>
+	            </div>
+
+	            <div class="mobile_cart">
+	            	<p>Add to cart</p>
+	            </div>
+	        </div>
+
+          	<div class="single_product">
+	            <div class="pic_box">
+	              <img src="images/perfume.jpg" alt="the picture of SANTAL 33">
+	            </div>
+
+	            <div class="product_name">
+	              <h4>SANTAL 33</h4>
+	            </div>
+
+	            <div class="product_info">
+	              <p>50 ml / 1.7 fl oz / CAD $225.00</p>
+	            </div>
+
+	            <div class="to_cart">
+	              <p>Add to cart</p>
+	            </div>
+
+	            <div class="mobile_cart">
+	            	<p>Add to cart</p>
+	            </div>
+	        </div>
+
+          	<div class="single_product">
+	            <div class="pic_box">
+	              <img src="images/perfume.jpg" alt="the picture of SANTAL 33">
+	            </div>
+
+	            <div class="product_name">
+	              <h4>SANTAL 33</h4>
+	            </div>
+
+	            <div class="product_info">
+	              <p>50 ml / 1.7 fl oz / CAD $225.00</p>
+	            </div>
+
+	            <div class="to_cart">
+	              <p>Add to cart</p>
+	            </div>
+
+	            <div class="mobile_cart">
+	            	<p>Add to cart</p>
+	            </div>
+	        </div>
+
+          	<div class="single_product">
+	            <div class="pic_box">
+	              <img src="images/perfume.jpg" alt="the picture of SANTAL 33">
+	            </div>
+
+	            <div class="product_name">
+	              <h4>SANTAL 33</h4>
+	            </div>
+
+	            <div class="product_info">
+	              <p>50 ml / 1.7 fl oz / CAD $225.00</p>
+	            </div>
+
+	            <div class="to_cart">
+	              <p>Add to cart</p>
+	            </div>
+
+	            <div class="mobile_cart">
+	            	<p>Add to cart</p>
+	            </div>
+	        </div>
+          </div>
+          
+        </div>
+
+      </section>
+
+      <!-- Payment form section -->
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <div class="element_content">
+          <h4>CSS selector:</h4>
+          <p>.card_info</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="card_info"&gt; <br>&nbsp;
+              &lt;label&gt;Accepted Card:&lt;/label&gt; <br>&nbsp;
+              &lt;input type="radio" id="Visa" name="cards" value="Visa"&gt; <br>&nbsp;
+              &lt;label for="Visa"&gt;Visa&lt;/label&gt; <br>&nbsp;
+              &lt;input type="radio" id="Debit" name="cards" value="Debit"&gt; <br>&nbsp;
+              &lt;label for="Debit"&gt;Debit&lt;/label&gt; <br>
+            &lt;/div&gt; <br><br>
+
+            &lt;div class="card_info"&gt; <br>&nbsp;
+              &lt;label>Name on Card:&lt;/label&gt; <br>&nbsp;
+              &lt;input type="text" id="fname" name="cardname" placeholder="First name"&gt; <br>&nbsp;
+              &lt;input type="text" id="lname" name="cardname" placeholder="Last name"&gt; <br>
+            &lt;/div&gt; <br><br>
+
+            &lt;div class="card_info"&gt; <br>&nbsp;
+              &lt;label for="cnum"&gt;Card Number:&lt;/label&gt;
+              &lt;input type="text" id="cnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx"&gt; <br>
+            &lt;/div&gt; <br><br>
+
+            &lt;div class="card_info"&gt; <br>&nbsp;
+              &lt;label for="expmonth"&gt;Exp Month and Year:&lt;/label&gt; <br>&nbsp;
+              &lt;input type="text" id="expmonth" name="Expmonth" placeholder="06/2022"&gt; <br>
+            &lt;/div&gt; <br><br>
+
+            &lt;div class="card_info"&gt; <br>&nbsp;
+              &lt;label for="cvv&gt;CVV:&lt;/label&gt; <br>&nbsp;
+              &lt;input type="text" id="cvv" name="cvvNum" placeholder="233"&gt; <br>
+            &lt;/div&gt; <br><br>
+
+            &lt;div class="button_container"&gt; <br>&nbsp;
+              &lt;a href="#combined_elements" class="button_subres"&gt;Proceed to Checkout&lt;/a&gt; <br>
+            &lt;/div>
+          </code> 
+
+          <h4>Rendered element:</h4>
+          <div class="card_info">
+            <label>Accepted Card:</label>
+            <input type="radio" id="Visa" name="cards" value="Visa">
+            <label for="Visa">Visa</label>
+            <input type="radio" id="Debit" name="cards" value="Debit">
+            <label for="Debit">Debit</label>
+          </div>
+
+          <div class="card_info">
+            <input class="block" type="text" name="cardname" placeholder="Name on card">
+          </div>
+
+          <div class="card_info">
+            <input class="block" type="text" id="cnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
+          </div>
+
+          <div class="card_info">
+            <input class="block" type="text" id="expmonth" name="Expmonth" placeholder="06/2022">
+          </div>
+
+          <div class="card_info">
+            <input class="block" type="text" id="cvv" name="cvvNum" placeholder="233">
+          </div>
+
+          <div class="button_container">
+            <a href="#combined_elements" class="button_subres">Proceed to Checkout</a>
+          </div>
+
+        </div>
+       
+      </section>
+
+
+      <!-- Checkout cart section -->
+      <section class="element">
+        <h3>Checkout Cart</h3>
+
+        <div class="element_content">
+          <h4>CSS selector:</h4>
+          <p>.checkout</p>
+          <p>.ship_info</p>
+          <p>cart_info</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="ship_info"&gt; <br>&nbsp;
+              &lt;h3&gt;SHIPMENT INFORMATION&lt;/h3&gt; <br><br>&nbsp;
+
+              &lt;div class="fullname"&gt; <br>&nbsp;&nbsp;
+                &lt;input class="half" type="text" name="fname" placeholder="First name"&gt; <br>&nbsp;&nbsp;
+                &lt;input class="half" type="text" name="lname" placeholder="Last name"&gt; <br>&nbsp;
+              &lt;/div&gt; <br><br>&nbsp;
+
+              &lt;div&gt; <br>&nbsp;&nbsp;
+                &lt;input class="full" type="text" name="company" placeholder="Company (optional)"&gt; <br>&nbsp;
+              &lt;/div&gt; &nbsp;
+
+              <p>... ...</p>
+
+              &nbsp;&lt;input type="checkbox" class="saveinfo" checked="checked" name="saveinfo"&gt; Remember this address. <br><br>&nbsp;
+
+              &lt;div class="button_container"&gt; <br>&nbsp;&nbsp;
+                va href="#interactive_elements" class="button_nav">Place your order&lt;/a&gt; <br>&nbsp;
+              &lt;/div&gt; <br>
+            &lt;/div&gt; <br><br>
+
+            &lt;div class="cart_info"&gt; <br>&nbsp;
+              &lt;h3&gt;ORDER SUMMARY&lt;/h3&gt; <br><br>&nbsp;
+
+              &lt;div class="cart_items"&gt; <br>&nbsp;&nbsp;
+                &lt;div class="item_info"&gt; <br>&nbsp;&nbsp;&nbsp;
+                  &lt;div&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    &lt;img src="images/perfume.jpg" alt="picture of SANTAL 33"&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    &lt;p&gt;SANTAL 33&lt;/p&gt; <br>&nbsp;&nbsp;&nbsp;
+                  &lt;/div&gt; <br><br>&nbsp;&nbsp;&nbsp;
+
+                  &lt;div&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    &lt;p&gt;$225.00&lt;/p&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                    &lt;p&gt;x1&lt;/p&gt; <br>&nbsp;&nbsp;&nbsp;
+                  &lt;/div&gt; <br>&nbsp;&nbsp;
+                &lt;/div&gt; &nbsp;&nbsp;
+
+                <p>... ...</p> 
+
+              &nbsp;&lt;/div&gt; <br><br>&nbsp;
+
+              &lt;div class="price_info"&gt; <br>&nbsp;&nbsp;
+                &lt;div&gt; <br>&nbsp;&nbsp;&nbsp;
+                  &lt;p&gt;SUBTATOL&lt;/p&gt; <br>&nbsp;&nbsp;&nbsp;
+                  &lt;p&gt;$407.00&lt;/p&gt; <br>&nbsp;&nbsp;
+                &lt;/div&gt; <br>&nbsp;
+              &lt;/div&gt; &nbsp;
+
+              <p>... ...</p> 
+ 
+              &nbsp;&lt;div class="price_total"&gt; <br>&nbsp;&nbsp;
+                &lt;P&gt;TOTAL&lt;/P&gt; <br>&nbsp;&nbsp;
+                &lt;p&gt;CAD &lt;b&gt;$460.84&lt;/b&gt;&lt;/p&gt; <br>&nbsp;
+              &lt;/div&gt; <br><br>
+
+            &lt;/div&gt;
+
+          </code>
+
+          <h4>Rendered element:</h4>
+
+          <div class="checkout">
+            <div class="ship_info">
+              <h3>SHIPMENT INFORMATION</h3>
+
+              <div class="fullname">
+                <input class="half" type="text" name="fname" placeholder="First name">
+                <input class="half" type="text" name="lname" placeholder="Last name">
+              </div>
+
+              <div>
+                <input class="full" type="text" name="company" placeholder="Company (optional)">
+              </div>
+
+              <div>
+                <input class="full" type="text" name="address" placeholder="Address">
+              </div>
+
+              <div>
+                <input class="full" type="text" name="apat" placeholder="Apartment, suite, etc. (optional)">
+              </div>
+
+              <div>
+                <input class="full" type="text" name="city" placeholder="City">
+              </div>
+
+              <div>
+                <input class="full" type="text" name="phone" placeholder="Phone nomber">
+              </div>
+
+              <div>
+                <input class="full" type="text" name="email" placeholder="Email">
+              </div>
+
+              <div class="place_order">
+              	<input type="checkbox" class="saveinfo" checked="checked" name="saveinfo"> Remember this address.
+
+	             <div class="button_container">
+	                <a href="#combined_elements" class="button_nav">Place your order</a>
+	             </div>
+              </div>
+
+              
+            </div>
+
+            <div class="cart_info">
+              <h3>ORDER SUMMARY</h3>
+
+              <div class="cart_items">
+                <div class="item_info">
+                  <div>
+                    <img src="images/perfume.jpg" alt="picture of SANTAL 33">
+                    <p>SANTAL 33</p>
+                  </div>
+
+                  <div>
+                    <p>$225.00</p>
+                    <p>x1</p>
+                  </div>
+                </div>
+
+                <div class="item_info">
+                  <div>
+                    <img src="images/tonka.jpg" alt="picture of TONKA 25">
+                    <p>TONKA 25</p>
+                  </div>
+
+                  <div>
+                    <p>$187.00</p>
+                    <p>x1</p>
+                  </div>
+                </div>
+              
+              </div>
+
+              <div class="price_info">
+                <div>
+                  <p>SUBTATOL</p>
+                  <p>$407.00</p>
+                </div>
+
+                <div>
+                  <p>SHIPPING</p>
+                  <p>STANDARD SHIPPING $5.00</p>
+                </div>
+
+                <div>
+                  <p>TAX</p>
+                  <p>$48.84</p>
+                </div>
+              </div>
+
+              <div class="price_total">
+                <P>TOTAL</P>
+                <p>CAD <b>$460.84</b></p>
+              </div>
+
+              <div class="place_order_mobile">
+              	<input type="checkbox" class="saveinfo" checked="checked" name="saveinfo"> Remember this address.
+
+	             <div class="button_container">
+	                <a href="#combined_elements" class="button_nav">Place your order</a>
+	             </div>
+              </div>
+            </div>
+
+          </div>
+ 
+        </div>
+        
+      </section>
+
+    </section>
+
+
+    <section id="branding_ideas">
+      <h2>Basic Branding Ideas</h2>
+
+      <section class="element">
+        <h3>What does the company do?</h3>
+        <p>A'Z is a company that sells ferfumes and scented candle, and we offer online ordering and dilivery as well.</p>
+      </section>
+
+      <section class="element">
+        <h3>Who is the company to potential cunstomers?</h3>
+        <p>Our main potential customers are life lovers who would love add a little bit fragrance in their everyday time.</p>
+      </section>
+
+      <section class="element">
+        <h3>Why might this company entice someone to purches a product?</h3>
+        <p>Our products will not be very expensive, we have discount during events and festivals, and we offer free delivery around the whole World</p>
+      </section>
+
+    </section>
+
+    <section id="branding_components">
+      <h2>Branding Components</h2>
+
+      <section class="element">
+        <h3>Fonts</h3>
+
+        <div class="element_content">
+          <h4>Titile & subtitle: font-family: 'Saira Stencil One', cursive</h4>
+          <p>Main text: font-family: 'Saira', sans-serif;</p>
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Colour palettes</h3>
+
+        <div class="element_content">
+          <div class="bkcolor">
+            <p>Background colour #E7E8E0</p>
+          </div>
+
+          <div class="othercolor red">
+            <p>Title color #DA0D02</p>
+          </div>
+
+          <div class="othercolor black">
+            <p>Main text color #000</p>
+          </div>
+
+          <div class="othercolor gray">
+            <p>Other color #7F7F7F</p>
+          </div>
+
+          <div class="othercolor white">
+            <p>Other color #fff</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="element">
+        <h3>Potential imagery</h3>
+
+        <div class="element_content">
+          <img class="potentialimg" src="images/gallery.jpg" alt="this is the potential imagery of the website">
+        </div>
+      </section>
+
+    </section>
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <section class="element">
+        <ul>
+          <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+          <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+          <li>W3School. <strong>How To - Checkout Form</strong>. Retrived from <a href="https://www.w3schools.com/howto/howto_css_checkout_form.asp">https://www.w3schools.com/howto/howto_css_checkout_form.asp</a></li>
+        </ul>
+      </section>
+
+    </section>
+  	
+  </body>
+  </html>
