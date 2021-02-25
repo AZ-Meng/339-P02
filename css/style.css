@@ -7,7 +7,7 @@ styling for the whole page------------
 
 body{
 	padding: 2rem;
-	background-color: #E7E8E0;
+	background-color: #E8E6E6;
 }
 
 p,li{
@@ -16,7 +16,7 @@ p,li{
 
 h1,h2,h3{
 	font-family: 'Saira Stencil One', cursive;
-	color: #DA0D02;
+	color: #CAA479;
 }
 
 h4{
@@ -56,8 +56,8 @@ header{
 	margin-bottom: 10%;
 }
 nav.menu{
-	border-top: 3px solid #DA0D02;
-	border-bottom: 3px solid #DA0D02;
+	border-top: 3px solid #CAA479;
+	border-bottom: 3px solid #CAA479;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -76,7 +76,7 @@ div.menu_item>a{
 	font-family: 'Saira Stencil One', cursive;
 	font-size: 1.5em;
 	text-decoration: none;
-	color: #DA0D02;
+	color: #CAA479;
 	background-color: rgba(0,0,0,0);
 	width: 100%;
 	height: 100%;
@@ -84,7 +84,7 @@ div.menu_item>a{
 }
 
 div.menu_item:hover{
-	background-color: #DA0D02;
+	background-color: #CAA479;
 }
 
 div.menu_item>a:hover{
