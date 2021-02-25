@@ -124,28 +124,28 @@ div.button_container{
 a.button_nav{
 	text-decoration: none;
 	font-family: 'Saira', sans-serif;
-	border: 1px solid #DA0D02;
+	border: 1px solid #CAA479;
 	padding: 1em 4em;
 	color: #000;
 }
 
 a.button_nav:hover{
 	font-weight: bold;
-	background-color: #DA0D02;
+	background-color: #CAA479;
 }
 
 /*submit&reset button part*/
 a.button_subres{
 	text-decoration: none;
 	font-family: 'Saira', sans-serif;
-	border: 2px solid #fff;
+	border: 2px solid #CAA479;
 	padding: 1em 3em;
-	color: #DA0D02;
+	color: black;
 }
 
 a.button_subres:hover{
 	font-weight: bold;
-	background-color: #fff;
+	background-color: #CAA479;
 }
 
 /*text input and label part*/
@@ -153,7 +153,7 @@ label{
 	font-family: 'Saira', sans-serif;
 	font-style: italic;
 	font-weight: bold;
-	color: #DA0D02;
+	color: #CAA479;
 }
 
 /*image link part*/
@@ -263,8 +263,8 @@ div.cart_info{
 }
 
 div.cart_items{
-	border-top: 1.5px solid #DA0D02;
-	border-bottom: 1.5px solid #DA0D02;
+	border-top: 1.5px solid #CAA479;
+	border-bottom: 1.5px solid #CAA479;
 	
 }
 
@@ -288,7 +288,7 @@ div.item_info>div{
 }
 
 div.price_info{
-	border-bottom: 1.5px solid #DA0D02;
+	border-bottom: 1.5px solid #CAA479;
 }
 
 div.price_info>div, div.price_total{
