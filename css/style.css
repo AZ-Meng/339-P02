@@ -204,7 +204,7 @@ div.to_cart>p{
 }
 
 div.to_cart:hover{
-	background-color: #DA0D02;
+	background-color: #CAA479;
 }
 
 div.to_cart>p:hover{
@@ -332,7 +332,7 @@ div.bkcolor{
 }
 
 div.red{
-	background-color: #DA0D02;
+	background-color: #CAA479;
 }
 
 div.black{
@@ -344,11 +344,11 @@ div.black>p{
 }
 
 div.gray{
-	background-color: #7F7F7F;
+	background-color: #B2A99A;
 }
 
 div.white{
-	background-color: #fff;
+	background-color: #827163;
 }
 
 /*potential imagery part*/
