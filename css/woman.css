@@ -212,3 +212,74 @@ a:hover {
     opacity: 100%;
   }
 
+
+  .footer-container{
+   height: 290px;
+   margin-top:20px; 
+   background-color: white;
+   margin:0 auto;
+	display:flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+  }
+
+.footer-wrap{
+    margin-left:15px;
+	margin-top:50px;
+	flex-basis: 380px;
+	flex-grow: 1;
+	border:1px solid green;
+}
+.footer-left{
+  margin-top: 30px;
+
+}
+
+.footer-lelabo-logo{
+	width: 100px;
+	height: 40px;
+	float: left;
+	margin-left: 20px;
+}
+
+.footer-left-contact-us{
+  float: left;
+  margin-right: 15px;
+}
+
+.footer-left-contact-us ul{
+	list-style:none;
+
+}
+.footer-left-contact-us ul li a{
+	text-decoration:none;
+	color:black;
+	padding:10px;
+	font-size:18px;
+}
+
+
+.footer-right{
+ margin-left: 10px;
+
+}
+
+.footer-right-form{
+  margin-left: 10px;
+}
+
+.footer-right-form input[type=text] {
+	width: calc(100% - 45px);
+	margin-bottom: 10px;
+	padding-bottom:80px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.footer-right-form label {
+	margin-bottom: 10px;
+	display: block;
+}
+
+
+
