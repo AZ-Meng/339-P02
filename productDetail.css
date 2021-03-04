@@ -1,0 +1,133 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #E8E6E6;
+}
+
+h2{
+	font-family: 'Saira Stencil One', cursive;
+	color: #CAA479; 
+}
+
+p, a{
+	font-family: 'Saira', sans-serif;
+}
+
+section.product_detail{
+	/*border: 1px solid white;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 8rem;
+	margin-top: 4rem;
+}
+
+div.product_preview{
+	/*border: 1px solid black;*/
+	width: 10%;
+	padding: 1rem;
+	padding-right: 0;
+}
+
+div.product_preview>img{
+	width: 100%;
+	padding-bottom: 1rem;
+}
+
+div.product_img{
+	/*border: 1px solid black;*/
+	width: 50%;
+	padding: 1rem;
+}
+
+div.product_img>img{
+	width: 100%;
+}
+
+div.product_info{
+	/*border: 1px solid black;*/
+	width: 35%;
+}
+
+div.nameAndPrice{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div.nameAndPrice>h2{
+	/*border: 1px solid white;*/
+	font-size: 1.5rem;
+}
+
+div.product_info>input{
+	width: 100%;
+	border: 0;
+	border-radius: 3px;
+	padding: 1em;
+	margin: 0.5em 0;
+}
+
+div.navigation_btn{
+	border: 1px solid #827163;
+	margin: 1rem 0;
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div.navigation_btn>a{
+/*	border: 1px solid #827163;*/
+	/*font-family: 'Saira', sans-serif;*/
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	background-color: rgba(0,0,0,0);
+	padding: 1rem 9rem;
+}
+
+div.navigation_btn:hover{
+	background-color: #827163;
+}
+
+div.navigation_btn>a:hover{
+	color: white;
+	font-weight: bold;
+}
+
+div.addSample, div.needHelp{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div.addSample>a, div.needHelp>a{
+	color: black;
+}
+
+section.recommendation{
+	width: 80%;
+	margin: auto;
+}
+
+
+/*styling for mobile version*/
+@media only screen and (max-width: 900px){
+	div.product_preview{
+		width: 20%;
+	}
+
+	div.product_img{
+		width: 75%;
+	}
+
+	div.product_info{
+		width: 95%;
+	}
+}
