@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link href="css/checkout.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <!-- font awesome css file -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <!--responsive css-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!--    <style>
+   img { 
+       width: 50%; }
+   </style> -->
+</head>
+
+<body>
+
+<header>
+   <div class="header">
+        <div class="nav">
+
+            <div><a href="" class="phone-screenplay"><i class="fa fa-bars"></i></a></div>
+
+            <ul>
+                <li><a href="p01.html">Style Guide</a></li>
+                <li><a href="new_woman.html">Women</a></li>
+                <li><a href="new_man.html">Men</a></li>
+                <li><a href="">Brands</a></li>
+                <li><a href="">Top sellers</a></li>
+                <li><a href="">Sale</a></li>
+                <li><a href="">My Account</a></li>
+                <!-- <li><a href=""></a></li> -->
+            </ul>
+            <div class="search_bar">
+                <input type="text" placeholder="Search"><span><i class="fas fa-search"></i></span>
+                <a href="checkout_page.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </div> 
+
+</header>
+
+
+    <div class="full-width">
+        <div class="container">
+            <div class="wrap">
+                <div class="product">
+                    <div class="row">
+                        <div class="payment">
+                            <img src="images/Accepted_Cards.jpg" alt="cards" width="100">
+                            <label for="cname"> Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="Xinyu Zhang">
+                            <label for="ccnum"> Credit Card Number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expdate"> Exp Date</label>
+                            <input type="text" id="expdate" name="expdate" placeholder="DD/MM/YY">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="352">
+                            <input type="submit" value="Continue to checkout" class="btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <h2>Checkout Cart</h2> -->
+            <!-- I learnt from W3C -->
+            <div class="wrap">
+                <div class="product">
+                    <div class="checkout-box">
+                        <p style="font-size: 28px;font-weight: bold;">Checkout Cart</p>
+                        <div class="checkout-item">
+                            <img style="width:100px;height:100px;" class="checkimg" src="images/ENDOT_Wool_Coat.jpg" alt="" />
+                            <a href="#" class="brand-links checkout-product">Product 1</a>
+                            <span class="size">size: L</span>
+                            <span>$20</span>
+                        </div>
+                        <div class="checkout-item">
+                            <img style="width:100px;height:100px;" class="checkimg" src="images/potential_image_3.jpg" alt="" />
+                            <a href="#" class="brand-links checkout-product">Product 2</a>
+                            <span class="size">size: L</span>
+                            <span>$20</span>
+                        </div>
+                        <div class="checkout-item">
+                            <img style="width:100px;height:100px;" class="checkimg" src="images/potential_image_1.jpg" alt="" />
+                            <a href="#" class="brand-links checkout-product">Product 3</a>
+                            <span class="size">size: L</span>
+                            <span>$20</span>
+                        </div>
+                        <div class="checkout-item">
+                            <img style="width:100px;height:100px;" class="checkimg" src="images/potential_image_2.jpg" alt="" />
+                            <a href="#" class="brand-links checkout-product">Product 4</a>
+                            <span class="size">size: L</span>
+                            <span>$20</span>
+                        </div>
+                        <div class="checkout-item checkout-total">
+                            <span>Order Total</span>
+                            <span>$80</span>
+                        </div>
+                        <a class="button-nav" href="#" style="width: 100%;padding: 1em 0em;margin-top: 20px;">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
