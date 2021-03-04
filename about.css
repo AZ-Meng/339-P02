@@ -1,0 +1,79 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #E8E6E6;
+}
+
+h2{
+	font-family: 'Saira Stencil One', cursive;
+	color: #CAA479;
+}
+
+p{
+	font-family: 'Saira', sans-serif;
+	color: black;
+}
+
+section.content_container{
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	width: 50%;
+	margin: auto;
+}
+
+div.ourStory, div.ourCustomers{
+	padding-bottom: 10rem;
+	border-bottom: 1px solid white;
+}
+
+div.title_container{
+	width: 90%;
+	margin: auto;
+	padding-top: 4rem;
+	padding-bottom: 1rem;
+}
+
+div.imgAndText_container{
+	background-color: #827163;
+	padding-top: 2rem;
+	padding-bottom: 6rem;
+}
+
+div.imgAndText_container>div,div.imgAndText_container>p{
+	color: white;
+	width: 90%;
+	margin: auto;
+}
+
+div.imgAndText_container img{
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+div.ourEvents{
+	padding-bottom: 10rem;
+}
+
+div.ourEvents h3{
+	width: 90%;
+	margin: auto;
+	color: white;
+	font-family: 'Saira Stencil One', cursive;
+	padding: 1rem 0;
+}
+
+
+/*styling for mobile version*/
+@media only screen and (max-width: 900px){
+	section.content_container{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	div.ourStory, div.ourCustomers{
+		padding-bottom: 0;
+	}
+}
