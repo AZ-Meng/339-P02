@@ -235,10 +235,14 @@ fieldset {
 	color: grey;
 }
 
+.brand-links{
+	padding-right:200px;
+}
+
 .product-size{
 	padding-top:75px;
 	position:absolute;
-	padding-left:285px;
+	padding-left:185px;
 }
 
 .checkout-item{
