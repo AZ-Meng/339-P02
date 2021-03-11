@@ -3,12 +3,9 @@
 
   <head>
 
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P02 - About Us</title>
-
-    <link href="css/common.css" rel="stylesheet">
-    <link href="css/about.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
@@ -17,30 +14,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
 
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+
   </head>
   <body>
 
   	<header>
-	   <div class="header">
-	        <div class="nav">
+	    <div class="logo"><img src="images/logo.png" alt="company logo"></div>
 
-	        	<div><a href="" class="phone-screenplay"><i class="fa fa-bars"></i></a></div>
+      <div class="navigation">
+        <div class="search_bar">
+          <img src="images/search.png" alt="search icon">
+          <!-- <input type="text" name="search" placeholder="Search by item name..."> -->
+        </div>
 
-	            <ul>
-	                <li><a class="menu" href="index.html">Style Guide</a></li>
-                  <li><a class="menu" href="new_woman.html">Women</a></li>
-                  <li><a class="menu" href="new_man.html">Men</a></li>
-                  <li><a class="menu" href="about.html">Brands</a></li>
-                  <li><a class="menu" href="checkout_page.html">My Cart</a></li>
-	            </ul>
-	            <div class="search_bar">
-	                <input type="text" placeholder="Search"><span><i class="fas fa-search"></i></span>
-	                <a href="checkout_page.html"><i class="fas fa-shopping-cart"></i></a>
-	            </div>
-	        </div>
-	    </div> 
+        <nav class="menu">
+          <div class="menu_item"><a href="index.html">Style Guide</a></div>
+            <div class="menu_item"><a href="new_woman.html">Women</a></div>
+            <div class="menu_item"><a href="new_man.html">Man</a></div>
+            <div class="menu_item"><a href="about.html">Brand</a></div>
+        </nav>
+      </div>
 
-	</header>
+      <div class="cart_icon">
+        <a href="checkout_page.html">
+          <img src="images/cart.png" alt="shopping cart icon"></a>
+      </div> 
+
+	  </header>
 
     <section class="content_container">
 
