@@ -1,11 +1,11 @@
 /*special css for the product detail page*/
-*{
+/**{
 	box-sizing: border-box;
 }
 
 body{
 	background-color: #E8E6E6;
-}
+}*/
 
 h2{
 	font-family: 'Saira Stencil One', cursive;
