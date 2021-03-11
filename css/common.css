@@ -19,7 +19,6 @@ header{
 
 div.logo, div.cart_icon{
 	width: 15%;
-	border: 1px solid white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -35,7 +34,8 @@ div.cart_icon a{
 
 div.navigation{
 	width: 70%;
-	border: 1px solid white;
+	border-left: 0.5px solid white;
+	border-right: 0.5px solid white;
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
@@ -44,7 +44,7 @@ div.navigation{
 
 div.search_bar, nav{
 	height: 50%;
-	border: 1px solid white;
+	border-bottom: 0.5px solid white;
 }
 
 div.search_bar input{
@@ -84,6 +84,41 @@ nav a:hover{
 }
 
 
+/*styling for mobile version header*/
+section.mobile_header{
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+section.mobile_header label{
+	display: block;
+	display: flex;
+	justify-content: center;
+}
+
+section.mobile_header img{
+	width: 10%;
+	min-width: 40px;
+}
+
+.dropDown{
+	display: none;
+}
+
+.dropDown:checked{
+	display: block;
+}
+
+section.mobile_header input{
+	display: none;
+	border: 1px solid red;
+}
+
 
 /*styling for footer*/
 footer{
@@ -102,5 +137,16 @@ div.icons{
 
 div.icons a{
 	width: 10%;
+	min-width: 20px;
 	margin: 0 3rem;
+}
+
+@media only screen and (max-width: 800px){
+	header{
+		display: none;
+	}
+
+	section.mobile_header{
+		display: block;
+	}
 }

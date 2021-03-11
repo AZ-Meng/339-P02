@@ -11,15 +11,18 @@
     <link href="css/productDetail.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
+
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/productDetail.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
 
   </head>
   <body>
 
+    <!-- code for laptop version header -->
     <header>
       <div class="logo"><img src="images/logo.png" alt="company logo"></div>
 
@@ -40,9 +43,24 @@
       <div class="cart_icon">
         <a href="checkout_page.html">
           <img src="images/cart.png" alt="shopping cart icon"></a>
-      </div> 
+      </div>
 
     </header>
+
+
+    <!-- code for mobile version header -->
+    <section class="mobile_header">
+      <div>
+        <label for="mobile_menu"><img src="images/menu.png"></label>
+        <input type="checkbox" name="menu" class="dropDown" id="mobile_menu">
+        <div class="dropDown">
+          <div class="menu_item"><a href="index.html">Style Guide</a></div>
+            <div class="menu_item"><a href="new_woman.html">Women</a></div>
+            <div class="menu_item"><a href="new_man.html">Man</a></div>
+            <div class="menu_item"><a href="about.html">Brand</a></div>
+        </div>
+      </div>
+    </section>
 
     <section class="product_detail">
       <div class="product_preview">
@@ -68,17 +86,17 @@
         <input type="text" name="other" placeholder="Label + Box: 23">
 
         <div class="navigation_btn">
-          <a href="#">ADD TO CART</a>
+          <a href="checkout_page.html">ADD TO CART</a>
         </div>
 
         <div class="addSample">
           <p>Not ready to commit?</p>
-          <a href="#">add sample to cart</a>
+          <a href="checkout_page.html">add sample to cart</a>
         </div>
 
         <div class="needHelp">
           <p>Need help?</p>
-          <a href="#">contact us</a>
+          <a href="about.html">contact us</a>
         </div>
 
       </div>
@@ -87,6 +105,29 @@
 
     <section class="recommendation">
       <h2>Recommendation For You</h2>
+
+      <div class="container">
+        <div class="wrap">
+          <div class="product">
+            <img src="images/tonka.jpg" alt="" />
+            <div class="button"><a href="#">quick shop</a></div>
+            <h2>TONKA 25</h2>
+            <p>10 ml / 0.33 fl oz travel tube refill set</p>
+            <p><del>$99.00</del><mark>$93.00</mark></p>
+          </div>
+        </div>
+
+        <div class="wrap">
+          <div class="product">
+            <img src="images/tonka.jpg" alt="" />
+            <div class="button"><a href="#">quick shop</a></div>
+            <h2>TONKA 25</h2>
+            <p>10 ml / 0.33 fl oz travel tube refill set</p>
+            <p><del>$99.00</del><mark>$93.00</mark></p>
+          </div>
+        </div>
+      </div>
+      
     </section>
 
     <footer>
