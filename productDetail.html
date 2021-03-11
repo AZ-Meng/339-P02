@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -25,14 +27,11 @@
             <div><a href="" class="phone-screenplay"><i class="fa fa-bars"></i></a></div>
 
               <ul>
-                  <li><a href="index.html">Style Guide</a></li>
-                  <li><a href="new_woman.html">Women</a></li>
-                  <li><a href="new_man.html">Men</a></li>
-                  <li><a href="">Brands</a></li>
-                  <li><a href="">Top sellers</a></li>
-                  <li><a href="">Sale</a></li>
-                  <li><a href="">My Account</a></li>
-                  <!-- <li><a href=""></a></li> -->
+                  <li><a class="menu" href="index.html">Style Guide</a></li>
+                  <li><a class="menu" href="new_woman.html">Women</a></li>
+                  <li><a class="menu" href="new_man.html">Men</a></li>
+                  <li><a class="menu" href="about.html">Brands</a></li>
+                  <li><a class="menu" href="checkout_page.html">My Cart</a></li>
               </ul>
               <div class="search_bar">
                   <input type="text" placeholder="Search"><span><i class="fas fa-search"></i></span>
@@ -45,13 +44,13 @@
 
     <section class="product_detail">
       <div class="product_preview">
-        <img src="images/perfume.jpg" alt="a preview picture of SANTAL 33">
-        <img src="images/info.png" alt="a preview picture of perfume information">
-        <img src="images/box.png" alt="a preview picture of the packing box">
+        <img src="images/perfume.jpg" alt="a preview picture of SANTAL 33" onclick="document.getElementById('displayImage').src='images/perfume.jpg'">
+        <img src="images/info.png" alt="a preview picture of perfume information" onclick="document.getElementById('displayImage').src='images/info.png'">
+        <img src="images/box.png" alt="a preview picture of the packing box" onclick="document.getElementById('displayImage').src='images/box.png'">
       </div>
 
       <div class="product_img">
-        <img src="images/perfume.jpg" alt="a picture of SANTAL 33">
+        <img src="images/perfume.jpg" alt="a picture of SANTAL 33" id="displayImage">
       </div>
 
       <div class="product_info">
