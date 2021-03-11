@@ -1,11 +1,12 @@
 /*special css for the about page*/
 h2{
-	font-family: 'Saira Stencil One', cursive;
+	font-family: 'Hind', sans-serif;
+	font-size: 1.5rem;
 	color: #CAA479;
 }
 
 p{
-	font-family: 'Saira', sans-serif;
+	font-family: 'Hind', sans-serif;
 	color: black;
 }
 
@@ -16,7 +17,7 @@ section.content_container{
 	margin: auto;
 }
 
-div.ourStory, div.ourCustomers{
+div.ourStory, div.ourCustomers, div.contactInfo{
 	padding-bottom: 10rem;
 	border-bottom: 1px solid white;
 }
@@ -53,7 +54,7 @@ div.ourEvents h3{
 	width: 90%;
 	margin: auto;
 	color: white;
-	font-family: 'Saira Stencil One', cursive;
+	font-family: 'Hind', sans-serif;
 	padding: 1rem 0;
 }
 
