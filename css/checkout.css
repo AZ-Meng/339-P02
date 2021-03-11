@@ -203,6 +203,7 @@ fieldset {
 	border-width: 2px;
 	border-top-style: solid;
 	padding: 15px 0px;
+	/*border: 2px solid green;*/
 	/*display: flex;
 	flex-direction: row;
 	justify-content: space-between;*/
@@ -224,6 +225,7 @@ fieldset {
 	background-color: #F5F5F5;
 	display:flex;
 	flex-direction: column;
+	border: 2px solid yellow;
 }
 
 .checkout-box a{
@@ -236,13 +238,37 @@ fieldset {
 }
 
 .brand-links{
-	padding-right:200px;
+	padding-right:150px;
 }
 
 .product-size{
 	padding-top:75px;
 	position:absolute;
 	padding-left:185px;
+}
+
+.price{
+	padding-top:70px;
+	position:absolute;
+	padding-left:470px;
+}
+
+.num-control{
+	padding-top:75px;
+	position:absolute;
+	padding-left:200px;
+	display: flex;
+	align-items: baseline;
+	border: 2px solid green;
+}
+
+.num_minus, .num_plus{
+	width: 10px;
+	display: inline-block;
+}
+
+.num{
+	width:40px;
 }
 
 .checkout-item{
