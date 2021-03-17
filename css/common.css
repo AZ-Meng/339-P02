@@ -32,6 +32,10 @@ div.cart_icon a{
 	width: 30%;
 }
 
+div.cart_icon img{
+	width: 100%;
+}
+
 div.navigation{
 	width: 70%;
 	border-left: 0.5px solid white;
@@ -62,8 +66,6 @@ div.search_bar{
 
 div.search_bar>img{
 	width: 25px;
-	/*margin-left: 1rem;
-	margin-top: 1rem;*/
 }
 
 nav{

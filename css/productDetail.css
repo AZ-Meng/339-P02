@@ -158,13 +158,7 @@ div.wrap{
     position: relative;
     /*border:1px solid green;*/
   }
-  img {
-    width: 90%;
-   /* height: px;*/
-    margin: 0 auto;
-  
-  
-  }
+
   
   .button {
     position: absolute;
