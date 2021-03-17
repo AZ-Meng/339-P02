@@ -79,11 +79,26 @@
           <p>CAD $125.00</p>
         </div>
 
-        <input type="text" name="size" placeholder="Size: 50 ml / 1.7 fl oz">
+        <div class="selects">
+        	<label for="sizes">SIZE: </label>
+        	<select name="sizes" id="sizes">
+        		<option value="15ml">15 ml / 0.5 fl oz</option>
+        		<option value="50ml">50 ml / 1.7 fl oz</option>
+        		<option value="100ml">100 ml / 3.4 fl oz</option>
+        		<option value="500ml">500 ml / 16.9 fl oz</option>
+        	</select>
+        </div>
 
-        <input type="text" name="quantity" placeholder="Quantity: 1">
-
-        <input type="text" name="other" placeholder="Label + Box: 23">
+        <div class="selects">
+        	<label for="quantity">QUANTITY: </label>
+        	<select name="quantity" id="quantity">
+        		<option value="one">1</option>
+        		<option value="two">2</option>
+        		<option value="three">3</option>
+        		<option value="four">4</option>
+        		<option value="five">5</option>
+        	</select>
+        </div>
 
         <div class="navigation_btn">
           <a href="checkout_page.html">ADD TO CART</a>
@@ -101,6 +116,12 @@
 
       </div>
 
+    </section>
+
+    <section class="reviews">
+    	<h2>Leave Your Review Here</h2>
+
+    	<input type="text" name="customerReview" placeholder="Do you like our product? Share your shopping experience with others...">
     </section>
 
     <section class="recommendation">

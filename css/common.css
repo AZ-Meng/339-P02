@@ -61,6 +61,7 @@ div.search_bar input{
 
 div.search_bar{
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
