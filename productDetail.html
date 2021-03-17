@@ -50,16 +50,27 @@
 
     <!-- code for mobile version header -->
     <section class="mobile_header">
-      <div>
-        <label for="mobile_menu"><img src="images/menu.png"></label>
-        <input type="checkbox" name="menu" class="dropDown" id="mobile_menu">
-        <div class="dropDown">
-          <div class="menu_item"><a href="index.html">Style Guide</a></div>
-            <div class="menu_item"><a href="new_woman.html">Women</a></div>
-            <div class="menu_item"><a href="new_man.html">Man</a></div>
-            <div class="menu_item"><a href="about.html">Brand</a></div>
-        </div>
-      </div>
+    	<div class="displayHeader">
+    		<div class="menu" onclick="showMenu()">
+    			<img src="images/menu.png">
+    		</div>
+
+    		<div class="mobileLogo">
+    			<a href="index.html"><img src="images/logoDark.png"></a>
+    		</div>
+
+    		<div class="mobileCart">
+    			<a href="checkout_page.html"><img src="images/cartDark.png"></a>
+    		</div>
+    	</div>
+
+    	<ul id="dropDown">
+    		<li><a href="#">HOME</a></li>
+    		<li><a href="new_man.html">MAN</a></li>
+    		<li><a href="new_woman">WOMAN</a></li>
+    		<li><a href="about.html">BRAND</a></li>
+    	</ul>
+ 
     </section>
 
     <section class="product_detail">
@@ -76,12 +87,12 @@
       <div class="product_info">
         <div class="nameAndPrice">
           <h2>SANTAL 33</h2>
-          <p>CAD $125.00</p>
+          <p>CAD $25.00</p>
         </div>
 
         <div class="selects">
         	<label for="sizes">SIZE: </label>
-        	<select name="sizes" id="sizes">
+        	<select name="sizes" id="sizes" onclick="changePrice()">
         		<option value="15ml">15 ml / 0.5 fl oz</option>
         		<option value="50ml">50 ml / 1.7 fl oz</option>
         		<option value="100ml">100 ml / 3.4 fl oz</option>
@@ -158,6 +169,8 @@
         <a href="about.html"><img src="images/email.png" alt="email icon"></a>
       </div>
     </footer>
+
+    <script src="script/productDetail.js"></script>
 
   </body>
 </html>
