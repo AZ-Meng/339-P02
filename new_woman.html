@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Men Shopping</title>
+    <title>Women Shopping</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
@@ -39,40 +39,35 @@
             <a href="checkout_page.html">
                 <img src="images/cart.png" alt="shopping cart icon"></a>
         </div>
-       <!-- <div class="header">
-            <div class="nav">
-
-                <div><a href="" class="phone-screenplay"><i class="fa fa-bars"></i></a></div>
-
-                <ul>
-                    <li><a href="index.html">Style Guide</a></li>
-                    <li><a href="new_woman.html">Women</a></li>
-                    <li><a href="new_man.html">Men</a></li>
-                    <li><a href="about.html">Brands</a></li>
-                    <li><a href="checkout_page.html">My Cart</a></li>
-                </ul>
-                <div class="search_bar">
-                    <input type="text" placeholder="Search"><span><i class="fas fa-search"></i></span>
-                    <a href="checkout_page.html"><i class="fas fa-shopping-cart"></i></a>
-                </div>
-            </div>
-        </div>  -->
-
     </header>
+
     
     <!-- code for mobile version header -->
     <section class="mobile_header">
-        <div>
-            <label for="mobile_menu"><img src="images/menu.png"></label>
-            <input type="checkbox" name="menu" class="dropDown" id="mobile_menu">
-            <div class="dropDown">
-                <div class="menu_item"><a href="index.html">Style Guide</a></div>
-                <div class="menu_item"><a href="new_woman.html">Women</a></div>
-                <div class="menu_item"><a href="new_man.html">Man</a></div>
-                <div class="menu_item"><a href="about.html">Brand</a></div>
+        <div class="displayHeader">
+            <div class="menu" onclick="showMenu()">
+                <img src="images/menu.png">
+            </div>
+
+            <div class="mobileLogo">
+                <a href="index.html"><img src="images/logoDark.png"></a>
+            </div>
+
+            <div class="mobileCart">
+                <a href="checkout_page.html"><img src="images/cartDark.png"></a>
             </div>
         </div>
+
+        <ul id="dropDown">
+            <li><a href="#">HOME</a></li>
+            <li><a href="new_man.html">MAN</a></li>
+            <li><a href="new_woman.html">WOMAN</a></li>
+            <li><a href="about.html">BRAND</a></li>
+        </ul>
+ 
     </section>
+
+
 
     <!-- Body Content Part -->
     <div class="full-width">
@@ -147,6 +142,8 @@
             <a href="about.html"><img src="images/email.png" alt="email icon"></a>
         </div>
     </footer>
+
+    <script src="script/common.js"></script>
         
 </body>
 </html>

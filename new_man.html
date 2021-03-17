@@ -42,20 +42,35 @@
 
 	</header>
 
+	
+
 
 	<!-- code for mobile version header -->
-	<section class="mobile_header">
-		<div>
-			<label for="mobile_menu"><img src="images/menu.png"></label>
-			<input type="checkbox" name="menu" class="dropDown" id="mobile_menu">
-			<div class="dropDown">
-				<div class="menu_item"><a href="index.html">Style Guide</a></div>
-	  			<div class="menu_item"><a href="new_woman.html">Women</a></div>
-	  			<div class="menu_item"><a href="new_man.html">Man</a></div>
-	  			<div class="menu_item"><a href="about.html">Brand</a></div>
-			</div>
-		</div>
-	</section>
+    <section class="mobile_header">
+        <div class="displayHeader">
+            <div class="menu" onclick="showMenu()">
+                <img src="images/menu.png">
+            </div>
+
+            <div class="mobileLogo">
+                <a href="index.html"><img src="images/logoDark.png"></a>
+            </div>
+
+            <div class="mobileCart">
+                <a href="checkout_page.html"><img src="images/cartDark.png"></a>
+            </div>
+        </div>
+
+        <ul id="dropDown">
+            <li><a href="#">HOME</a></li>
+            <li><a href="new_man.html">MAN</a></li>
+            <li><a href="new_woman.html">WOMAN</a></li>
+            <li><a href="about.html">BRAND</a></li>
+        </ul>
+ 
+    </section>
+
+
 	
 	
 	<!-- Body Content Part -->
@@ -132,6 +147,8 @@
 			<a href="about.html"><img src="images/email.png" alt="email icon"></a>
 		</div>
 	</footer>
+
+	<script src="script/common.js"></script>
 	
 </body>
 </html>
