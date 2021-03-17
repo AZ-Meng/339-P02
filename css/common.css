@@ -89,6 +89,7 @@ nav a:hover{
 
 /*styling for mobile version header*/
 section.mobile_header{
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	background-color: white;
@@ -98,28 +99,45 @@ section.mobile_header{
 	display: none;
 }
 
-section.mobile_header label{
-	display: block;
+div.displayHeader{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
 }
 
-section.mobile_header img{
+div.displayHeader>div{
 	width: 10%;
-	min-width: 40px;
 }
 
-.dropDown{
+div.displayHeader img{
+	border: 1px solid black;
+	width: 100%;
+	min-width: 60px;
+}
+
+div.menu img{
+	padding: 0.5rem;
+}
+
+div.mobileCart img{
+	padding: 0.8rem;
+}
+
+ul#dropDown{
 	display: none;
+	padding-bottom: 1rem;
 }
 
-.dropDown:checked{
-	display: block;
+ul#dropDown>li{
+	list-style: none;
+	margin: 0.5rem 0;
 }
 
-section.mobile_header input{
-	display: none;
-	border: 1px solid red;
+ul#dropDown a{
+	text-decoration: none;
+	color: #827163;
+	font-size: 1rem;
+	transition: font-size 0.5s;
 }
 
 
