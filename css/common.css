@@ -110,7 +110,6 @@ div.displayHeader>div{
 }
 
 div.displayHeader img{
-	border: 1px solid black;
 	width: 100%;
 	min-width: 60px;
 }
@@ -144,22 +143,68 @@ ul#dropDown a{
 /*styling for footer*/
 footer{
 	background-color: #caa479;
-	display: flex;
-	justify-content: center;
 	margin-top: 10rem;
+	padding-bottom: 5rem;
+}
+
+div.footerContent{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+footer h3{
+	padding-top: 0;
+	margin-bottom: 0.5rem;
+	margin-top: 0;
+	font-family: 'Hind', sans-serif;
+}
+
+footer a{
+	display: block;
+	color: black;
+	font-family: 'Hind', sans-serif;
+	text-decoration: none;
+}
+
+div.process, div.contributor, div.joinUs{
+	width: 30%;
+	margin-top: 2rem;
 }
 
 div.icons{
 	display: flex;
-	justify-content: center;
-	width: 30%;
-	padding: 3rem 0;
+	justify-content: space-between;
+	width: 60%;
+	padding: 0;
+	margin-bottom: 0;
 }
 
 div.icons a{
-	width: 10%;
-	min-width: 20px;
-	margin: 0 3rem;
+	width: 15%;
+}
+
+div.icons img{
+	width: 100%;
+	min-width: 30px;
+}
+
+div.joinUs p{
+	font-size: 0.8rem;
+}
+
+div.joinUs input{
+	border: 0;
+	width: 100%;
+	padding: 1rem 0.5rem;
+}
+
+div.joinUs a{
+	text-decoration: underline;
+	margin: 1rem 0;
 }
 
 @media only screen and (max-width: 800px){
@@ -169,5 +214,13 @@ div.icons a{
 
 	section.mobile_header{
 		display: block;
+	}
+
+	div.process, div.contributor{
+		width: 50%;
+	}
+
+	div.joinUs{
+		width: 100%;
 	}
 }
