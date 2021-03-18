@@ -1,0 +1,62 @@
+section.confirmation{
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 5rem;
+}
+
+section.confirmation h2{
+	text-align: center;
+	font-family: 'Hind', sans-serif;
+}
+
+section.confirmation img{
+	width: 40%;
+	margin: auto;
+}
+
+div.btns{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+}
+
+div.btns div{
+	border: 1px solid black;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+div.btns a{
+	text-decoration: none;
+	width: 100%;
+	text-align: center;
+	color: black;
+	padding: 1rem 0;
+	font-family: 'Hind', sans-serif;
+}
+
+div.btns div:hover{
+	border: none;
+	background-color: #827163;
+}
+
+div.btns a:hover{
+	color: white;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 900px){
+	section.confirmation{
+		width: 80%;
+	}
+
+	div.btns div{
+		width: 80%;
+		margin-bottom: 2rem;
+	}
+}
