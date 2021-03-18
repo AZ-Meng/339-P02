@@ -63,7 +63,7 @@ div.imgAndText_container img{
 }
 
 @media only screen and (max-width: 600px){
-	div.ourStory, div.ourCustomers{
+	div.ourStory, div.ourCustomers,div.citeText{
 		padding-bottom: 0;
 	}
 }

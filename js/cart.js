@@ -1,14 +1,14 @@
 	$(function() {
 					totl();
 					adddel()
-						//全选
+						//select all
 					$("#all").click(function() {
 							all = $(this).prop("checked")
 							$(".Each").each(function() {
 								$(this).prop("checked", all);
 							})
 						})
-						//删除当前行
+						//delete selected line
 					$(".del").each(function() {
 							$(this).click(function() {
 								$(this).parent().remove();
@@ -20,13 +20,13 @@
 								totl();
 							})
 						})
-						//添加一行
+						//add line
 					$(".foot_add").click(function() {
 							var str = '<div class="imfor">' +
 								'<div class="check">' +
 								'<input type="checkbox" class="Each" />' +
 								'</div>' +
-								'<div class="pudc"><img src="images/tonka.jpg"  width="100"/><span>Product</span></div>' +
+								'<div class="pudc"><img src="images/tonka.jpg"  width="100"/><span>Tonka 25</span></div>' +
 								'<div class="pices">20.00</div>' +
 								'<div class="num"><span class="reduc">&nbsp;-&nbsp;</span><input type="text" value="1" /><span class="add">&nbsp;+</span></div>' +
 								'<div class="totle">20</div>' +
@@ -42,7 +42,7 @@
 								})
 							})
 						})
-						//全选删除										
+						//delete all										
 					$(".foot_del").click(function() {
 						$(".Each").each(function() {
 							if($(this).prop('checked')) {
@@ -59,7 +59,7 @@
 					})
 
 				})
-				//合计
+				//summary
 			function totl() {
 				var sum = 0;
 				$(".totle").each(function() {
@@ -70,8 +70,8 @@
 				})
 			}
 			function adddel(){
-				//小计和加减
-					//加
+				//plus and minus in left cart total
+					//plus
 					$(".add").each(function() {
 							$(this).click(function() {
 								var $multi = 0;
@@ -84,7 +84,7 @@
 							})
 
 						})
-						//减
+						//minus
 					$(".reduc").each(function() {
 							$(this).click(function() {
 								var $multi1 = 0;
