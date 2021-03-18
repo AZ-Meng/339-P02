@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P02 - Product Detail</title>
+
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/productDetail.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
+
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/productDetail.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+  </head>
+  <body>
+
+    <!-- code for laptop version header -->
+    <!-- <div class="aaa"><p>abcd</p></div> -->
+    <header>
+      <div class="logo">
+      	<a href="home.html">
+      		<img src="images/logo.png" alt="company logo">
+      	</a>
+      </div>
+
+      <div class="navigation">
+        <div class="search_bar">
+          <img src="images/search.png" alt="search icon">
+          <input type="text" name="search" placeholder="Search by item name...">
+        </div>
+
+        <nav class="menu">
+          <div class="menu_item"><a href="home.html">Home</a></div>
+            <div class="menu_item"><a href="new_woman.html">Women</a></div>
+            <div class="menu_item"><a href="new_man.html">Man</a></div>
+            <div class="menu_item"><a href="about.html">Brand</a></div>
+        </nav>
+      </div>
+
+      <div class="cart_icon">
+        <a href="checkout_page.html">
+          <img src="images/cart.png" alt="shopping cart icon"></a>
+      </div>
+
+    </header>
+
+
+    <!-- code for mobile version header -->
+    <section class="mobile_header">
+    	<div class="displayHeader">
+    		<div class="menu" onclick="showMenu()">
+    			<img src="images/menu.png">
+    		</div>
+
+    		<div class="mobileLogo">
+    			<a href="home.html"><img src="images/logoDark.png"></a>
+    		</div>
+
+    		<div class="mobileCart">
+    			<a href="checkout_page.html"><img src="images/cartDark.png"></a>
+    		</div>
+    	</div>
+
+    	<ul id="dropDown">
+    		<li><a href="home.html">HOME</a></li>
+    		<li><a href="new_man.html">MAN</a></li>
+    		<li><a href="new_woman.html">WOMAN</a></li>
+    		<li><a href="about.html">BRAND</a></li>
+    	</ul>
+ 
+    </section>
+
+
+    <section class="miniMenu">
+    	<p><a href="home.html">Home</a> / <a href="new_man.html">Men</a> / <a href="productDetail_man.html">Product Details</a></p>
+    </section>
+
+ 
+
+    <section class="product_detail">
+      <div class="product_preview">
+        <img src="images/tonka.jpg" alt="a preview picture of SANTAL 33" onclick="document.getElementById('displayImage').src='images/tonka.jpg'">
+        <img src="images/Tonka_info.jpg" alt="a preview picture of perfume information" onclick="document.getElementById('displayImage').src='images/Tonka_info.jpg'">
+        <img src="images/Tonka_box.jpg" alt="a preview picture of the packing box" onclick="document.getElementById('displayImage').src='images/Tonka_box.jpg'">
+      </div>
+
+      <div class="product_img">
+        <img src="images/tonka.jpg" alt="a picture of Tonka 25" id="displayImage">
+      </div>
+
+      <div class="product_info">
+        <div class="nameAndPrice">
+          <h2>TONKA 25</h2>
+          <p>CAD $25.00</p>
+        </div>
+
+        <div class="selects">
+        	<label for="sizes">SIZE: </label>
+        	<select name="sizes" id="sizes" onchange="changePrice()">
+        		<option value="15ml">15 ml / 0.5 fl oz</option>
+        		<option value="50ml">50 ml / 1.7 fl oz</option>
+        		<option value="100ml">100 ml / 3.4 fl oz</option>
+        		<option value="500ml">500 ml / 16.9 fl oz</option>
+        	</select>
+        </div>
+
+        <div class="selects">
+        	<label for="quantity">QUANTITY: </label>
+        	<select name="quantity" id="quantity">
+        		<option value="one">1</option>
+        		<option value="two">2</option>
+        		<option value="three">3</option>
+        		<option value="four">4</option>
+        		<option value="five">5</option>
+        	</select>
+        </div>
+
+        <div class="navigation_btn">
+          <a href="checkout_page.html">ADD TO CART</a>
+        </div>
+
+        <div class="addSample">
+          <p>Not ready to commit?</p>
+          <a href="checkout_page.html">add sample to cart</a>
+        </div>
+
+        <div class="needHelp">
+          <p>Need help?</p>
+          <a href="about.html">contact us</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="reviews">
+    	<h2>Leave Your Review Here</h2>
+
+    	<input type="text" name="customerReview" placeholder="Do you like our product? Share your shopping experience with others...">
+    </section>
+
+    <section class="recommendation">
+      <h2>Recommendation For You</h2>
+
+      <div class="container">
+        <div class="wrap">
+          <div class="product">
+            <img src="images/perfume.jpg" alt="" />
+            <div class="button"><a href="productDetail.html">quick shop</a></div>
+            <h2>SANTAL 33</h2>
+            <p>10 ml / 0.33 fl oz travel tube refill set</p>
+            <p><del>$99.00</del><mark>$93.00</mark></p>
+          </div>
+        </div>
+
+        <div class="wrap">
+          <div class="product">
+            <img src="images/perfume.jpg" alt="" />
+            <div class="button"><a href="productDetail.html">quick shop</a></div>
+            <h2>SANTAL 33</h2>
+            <p>10 ml / 0.33 fl oz travel tube refill set</p>
+            <p><del>$99.00</del><mark>$93.00</mark></p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    
+
+    <footer>
+    	<div class="footerContent">
+    		<div class="process">
+	    		<h3>Process</h3>
+	    		<a href="index.html">Style Guide</a>
+	    		<a href="#">Citation</a>
+	    		<a href="https://github.com/AZ-Meng/339-P02">Github</a>
+	    	</div>
+
+	    	<div class="contributor">
+	    		<h3>Contributors</h3>
+	    		<a href="#">Shelly Zhang</a>
+	    		<a href="#">Meng Zhao</a>
+	    	</div>
+
+	    	<div class="joinUs">
+	    		<h3>Join our community</h3>
+	    		
+	    		<div class="icons">
+			        <a href="about.html"><img src="images/location.png" alt="location icon"></a>
+			        <a href="about.html"><img src="images/phone.png" alt="phone icon"></a>
+			        <a href="about.html"><img src="images/email.png" alt="email icon"></a>
+			    </div>
+
+			    <p>By signing up, you agree that your email address will be used only to send you marketing newsletters and information about Le Labo products, events and offers.</p>
+			    <input type="text" name="emailAddress" placeholder="Enter your email address">
+			    <a href="#">Sign Up</a>
+	    	</div>
+    	</div>
+
+    </footer>
+
+    <script src="script/productDetail.js"></script>
+    <script src="script/common.js"></script>
+
+  </body>
+</html>
