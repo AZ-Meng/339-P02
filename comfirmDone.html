@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P02 - Comfirmation</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
+
+<link href="css/common.css" rel="stylesheet">
+<link href="css/comfirm.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+</head>
+<body>
+
+    <!-- code for laptop version header -->
+    <header>
+      <div class="logo"><img src="images/logo.png" alt="company logo"></div>
+
+      <div class="navigation">
+        <div class="search_bar">
+          <img src="images/search.png" alt="search icon">
+          <!-- <input type="text" name="search" placeholder="Search by item name..."> -->
+        </div>
+
+        <nav class="menu">
+          <div class="menu_item"><a href="index.html">Style Guide</a></div>
+            <div class="menu_item"><a href="new_woman.html">Women</a></div>
+            <div class="menu_item"><a href="new_man.html">Man</a></div>
+            <div class="menu_item"><a href="about.html">Brand</a></div>
+        </nav>
+      </div>
+
+      <div class="cart_icon">
+        <a href="checkout_page.html">
+          <img src="images/cart.png" alt="shopping cart icon"></a>
+      </div>
+
+    </header>
+
+
+    <!-- code for mobile version header -->
+    <section class="mobile_header">
+        <div class="displayHeader">
+            <div class="menu" onclick="showMenu()">
+                <img src="images/menu.png">
+            </div>
+
+            <div class="mobileLogo">
+                <a href="index.html"><img src="images/logoDark.png"></a>
+            </div>
+
+            <div class="mobileCart">
+                <a href="checkout_page.html"><img src="images/cartDark.png"></a>
+            </div>
+        </div>
+
+        <ul id="dropDown">
+            <li><a href="#">HOME</a></li>
+            <li><a href="new_man.html">MAN</a></li>
+            <li><a href="new_woman.html">WOMAN</a></li>
+            <li><a href="about.html">BRAND</a></li>
+        </ul>
+ 
+    </section>
+
+
+    <section class="comfirmation">
+        <h2>Thanks For Shopping!</h2>
+        <img src="images/comfirmed.png" alt="icon of wait to comfirmation.">
+        <div class="btns">
+            <div>
+                <a href="new_woman.html">Continues Shopping</a>
+            </div>
+
+            <div>
+                <a href="about.html">Back To Home</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footerContent">
+            <div class="process">
+                <h3>Process</h3>
+                <a href="index.html">Style Guide</a>
+                <a href="#">Citation</a>
+                <a href="https://github.com/AZ-Meng/339-P02">Github</a>
+            </div>
+
+            <div class="contributor">
+                <h3>Contributors</h3>
+                <a href="#">Shelly Zhang</a>
+                <a href="#">Meng Zhao</a>
+            </div>
+
+            <div class="joinUs">
+                <h3>Join our community</h3>
+                
+                <div class="icons">
+                    <a href="about.html"><img src="images/location.png" alt="location icon"></a>
+                    <a href="about.html"><img src="images/phone.png" alt="phone icon"></a>
+                    <a href="about.html"><img src="images/email.png" alt="email icon"></a>
+                </div>
+
+                <p>By signing up, you agree that your email address will be used only to send you marketing newsletters and information about Le Labo products, events and offers.</p>
+                <input type="text" name="emailAddress" placeholder="Enter your email address">
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script/common.js"></script>
+
+</body>
+</html>
