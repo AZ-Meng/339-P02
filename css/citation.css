@@ -5,7 +5,12 @@ h2{
 	color: #CAA479;
 }
 
-p{
+li{
+	font-family: 'Hind', sans-serif;
+	color: white;
+}
+
+a{
 	font-family: 'Hind', sans-serif;
 	color: black;
 }

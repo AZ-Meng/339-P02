@@ -11,8 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap"
         rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
-    <link href="css/about.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/productlist.css" />
     <link rel="stylesheet" type="text/css" href="css/all.min.css">
 </head>
 <body>
@@ -62,7 +60,7 @@
         </div>
 
         <ul id="dropDown">
-            <li><a href="#">HOME</a></li>
+            <li><a href="home.html">HOME</a></li>
             <li><a href="new_man.html">MEN</a></li>
             <li><a href="new_woman.html">WOMEN</a></li>
             <li><a href="about.html">BRAND</a></li>
@@ -70,35 +68,13 @@
  
     </section>
 
-      <div class="ourStory" style="padding-bottom: 0rem;">
+      <div class="ourStory">
          
 
         <div class="imgAndText_container">
 
             <div>
               <img src="images/1.jpg" alt="a picture of our main art concept" id="img">
-
-              <script>
-                  var a = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
-                  var k = 0;
-                  var time = 3;
-                  var tID;
-                  function nextImg() {
-                      k++;
-                      if (k === a.length)
-                          k = 0;
-                      document.getElementById("img").src = "images/" + a[k];
-                  }
-                  function setTime() {
-                      time--;
-                      if (time <= 0) {
-                          nextImg();
-                          time = 3;
-
-                      }
-                  }
-                  tID = setInterval("setTime()", 1000);
-		</script>
             </div>
 
             
@@ -141,5 +117,6 @@
     </footer>
 
     <script src="script/common.js"></script>
+    <script src="script/home.js"></script>
 </body>
 </html>
