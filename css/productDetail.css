@@ -16,15 +16,39 @@ p, a{
 	font-family: 'Hind', sans-serif;
 }
 
+
+/*styling for mini menu*/
+section.miniMenu{
+	width: 80%;
+	margin: auto;
+	margin-top: 4rem;
+}
+
+section.miniMenu p{
+	color: #827163;
+}
+
+section.miniMenu a{
+	text-decoration: none;
+	color: #827163;
+	padding-left: 1rem;
+}
+
+section.miniMenu a:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+
+/*styling for detail content*/
 section.product_detail{
-	/*border: 1px solid white;*/
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 80%;
 	margin: auto;
 	margin-bottom: 8rem;
-	margin-top: 4rem;
+	margin-top: 0;
 }
 
 div.product_preview{
@@ -37,6 +61,10 @@ div.product_preview{
 div.product_preview>img{
 	width: 100%;
 	padding-bottom: 1rem;
+}
+
+div.product_preview>img:hover{
+	cursor: pointer;
 }
 
 div.product_img{
