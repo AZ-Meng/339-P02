@@ -7,6 +7,7 @@ body{
 }
 
 
+
 /*styling for header*/
 header{
 	margin: 0;
@@ -14,6 +15,7 @@ header{
     background-color: #827163;
     display: flex;
     width: 100%;
+    top: 0;
     position: sticky;
 }
 
@@ -52,11 +54,16 @@ div.search_bar, nav{
 }
 
 div.search_bar input{
+	background-color: #827163;
 	width: 50%;
 	height: 2rem;
 	border: none;
 	border-radius: 5px;
 	margin-left: 1rem;
+}
+
+div.search_bar input::placeholder{
+	color: white;
 }
 
 div.search_bar{
@@ -76,14 +83,17 @@ nav{
 }
 
 nav a{
+	display: inline-block;
 	text-decoration: none;
 	font-family: 'Hind', sans-serif;
 	color: white;
+	transform: scale(1);
+	transition: transform 0.5s;
 }
 
 nav a:hover{
-	text-decoration: underline;
-	font-weight: bold;
+	border-bottom: 1px solid white;
+	transform: scale(1.1);
 }
 
 
@@ -124,19 +134,34 @@ div.mobileCart img{
 
 ul#dropDown{
 	display: none;
-	padding-bottom: 1rem;
+	margin: 0;
+	padding: 0;
 }
 
 ul#dropDown>li{
 	list-style: none;
-	margin: 0.5rem 0;
+	margin: 0;
+	padding-left: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	transition: all 0.5s;
+}
+
+ul#dropDown>li:hover{
+	background-color: #caa479;
+	color: white;
 }
 
 ul#dropDown a{
+	display: inline-block;
+	width: 100%;
 	text-decoration: none;
 	color: #827163;
 	font-size: 1rem;
-	transition: font-size 0.5s;
+}
+
+ul#dropDown a:hover{
+	color: white;
 }
 
 

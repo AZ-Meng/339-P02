@@ -23,13 +23,14 @@
   <body>
 
     <!-- code for laptop version header -->
+    <!-- <div class="aaa"><p>abcd</p></div> -->
     <header>
       <div class="logo"><img src="images/logo.png" alt="company logo"></div>
 
       <div class="navigation">
         <div class="search_bar">
           <img src="images/search.png" alt="search icon">
-          <!-- <input type="text" name="search" placeholder="Search by item name..."> -->
+          <input type="text" name="search" placeholder="Search by item name...">
         </div>
 
         <nav class="menu">
@@ -73,7 +74,12 @@
  
     </section>
 
-    
+
+    <section class="miniMenu">
+    	<p><a href="home.html">Home</a> / <a href="new_man.html">Man </a> / <a href="productDetail.html">Product Details</a></p>
+    </section>
+
+ 
 
     <section class="product_detail">
       <div class="product_preview">
@@ -94,7 +100,7 @@
 
         <div class="selects">
         	<label for="sizes">SIZE: </label>
-        	<select name="sizes" id="sizes" onclick="changePrice()">
+        	<select name="sizes" id="sizes" onchange="changePrice()">
         		<option value="15ml">15 ml / 0.5 fl oz</option>
         		<option value="50ml">50 ml / 1.7 fl oz</option>
         		<option value="100ml">100 ml / 3.4 fl oz</option>
