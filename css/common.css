@@ -17,6 +17,7 @@ header{
     width: 100%;
     top: 0;
     position: sticky;
+    z-index:1000
 }
 
 div.logo, div.cart_icon{
@@ -26,12 +27,18 @@ div.logo, div.cart_icon{
 	align-items: center;
 }
 
-div.logo>img{
-	width: 50%;
+div.logo a{
+	/*border: 1px solid red;*/
+	width: 35%;
+}
+
+div.logo img{
+	width: 100%;
 }
 
 div.cart_icon a{
-	width: 30%;
+	/*border: 1px solid red;*/
+	width: 20%;
 }
 
 div.cart_icon img{
@@ -48,15 +55,19 @@ div.navigation{
 	justify-content: center;
 }
 
-div.search_bar, nav{
+div.search_bar{
 	height: 50%;
 	border-bottom: 0.5px solid white;
 }
 
+div.navigation nav{
+	height: 50%;
+}
+
 div.search_bar input{
 	background-color: #827163;
-	width: 50%;
-	height: 2rem;
+	width: 20%;
+	height: 1.5rem;
 	border: none;
 	border-radius: 5px;
 	margin-left: 1rem;
