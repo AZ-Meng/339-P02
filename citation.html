@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P02 - About Us</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
+
+    <link href="css/common.css" rel="stylesheet"> 
+    <link href="css/citation.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+  </head>
+  <body>
+
+    <!-- code for laptop version header -->
+    <header>
+      <div class="logo">
+        <a href="home.html">
+          <img src="images/logo.png" alt="company logo">
+        </a>
+      </div>
+
+      <div class="navigation">
+        <div class="search_bar">
+          <img src="images/search.png" alt="search icon">
+          <input type="text" name="search" placeholder="Search by item name...">
+        </div>
+
+        <nav class="menu">
+          <div class="menu_item"><a href="home.html">Home</a></div>
+            <div class="menu_item"><a href="new_woman.html">Women</a></div>
+            <div class="menu_item"><a href="new_man.html">Man</a></div>
+            <div class="menu_item"><a href="about.html">Brand</a></div>
+        </nav>
+      </div>
+
+      <div class="cart_icon">
+        <a href="checkout_page.html">
+          <img src="images/cart.png" alt="shopping cart icon"></a>
+      </div>
+
+    </header>
+
+
+    <!-- code for mobile version header -->
+    <section class="mobile_header">
+      <div class="displayHeader">
+        <div class="menu" onclick="showMenu()">
+          <img src="images/menu.png">
+        </div>
+
+        <div class="mobileLogo">
+          <a href="index.html"><img src="images/logoDark.png"></a>
+        </div>
+
+        <div class="mobileCart">
+          <a href="checkout_page.html"><img src="images/cartDark.png"></a>
+        </div>
+      </div>
+
+      <ul id="dropDown">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="new_man.html">MAN</a></li>
+        <li><a href="new_woman.html">WOMAN</a></li>
+        <li><a href="about.html">BRAND</a></li>
+      </ul>
+ 
+    </section>
+
+
+
+    <section class="content_container">
+
+      <div class="ourStory">
+        
+        <div class="title_container">
+          <h2>Citation</h2>
+        </div>
+
+        <div class="imgAndText_container">
+
+          <!--   <div>
+              <img src="images/storyA.jpg" alt="a picture of our main art concept">
+            </div> -->
+
+        <div class="citeText">
+        <ul>
+
+          <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+          <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+          <li>W3School. <strong>How To - Checkout Form</strong>. Retrived from <a href="https://www.w3schools.com/howto/howto_css_checkout_form.asp">https://www.w3schools.com/howto/howto_css_checkout_form.asp</a></li>
+
+          <li>W3schools.<strong>responsive website</strong>. Retrived from <a href="https://www.w3schools.com/w3css/w3css_responsive.asp">https://www.w3schools.com/w3css/w3css_responsive.asp"</a></li>
+
+          <li>W3schools.<strong>Shopping Cart</strong>. Retrived from <a href="https://www.w3schools.com/icons/fontawesome5_icons_payment_shopping.asp">https://www.w3schools.com/icons/fontawesome5_icons_payment_shopping.asp"</a></li>
+
+          <li>CSS-TRICKS.<strong>Simple Auto-Playing Slideshow</strong>. Retrived from <a href="https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/">https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/</a></li>
+
+          <li>W3schools.<strong>How TO - Slideshow Gallery</strong>. Retrived from <a href="https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp">https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp</a></li>
+
+           <li>Codereview stack exchange.<strong>Shopping cart in pure JavaScript</strong>. Retrived from <a href="https://codereview.stackexchange.com/questions/168814/shopping-cart-in-pure-javascript">https://codereview.stackexchange.com/questions/168814/shopping-cart-in-pure-javascript</a></li>
+
+
+
+
+
+
+
+        </ul>
+      </div>
+
+        </div> <!-- end for .imgAndText_container -->
+
+      </div> <!-- end for div.ourStory -->
+
+    </section>
+
+    <footer>
+      <div class="footerContent">
+        <div class="process">
+          <h3>Process</h3>
+          <a href="index.html">Style Guide</a>
+          <a href="citation.html">Citation</a>
+          <a href="https://github.com/AZ-Meng/339-P02">Github</a>
+        </div>
+
+        <div class="contributor">
+          <h3>Contributors</h3>
+          <a href="#">Shelly Zhang</a>
+          <a href="#">Meng Zhao</a>
+        </div>
+
+        <div class="joinUs">
+          <h3>Join our community</h3>
+          
+          <div class="icons">
+              <a href="about.html"><img src="images/location.png" alt="location icon"></a>
+              <a href="about.html"><img src="images/phone.png" alt="phone icon"></a>
+              <a href="about.html"><img src="images/email.png" alt="email icon"></a>
+          </div>
+
+          <p>By signing up, you agree that your email address will be used only to send you marketing newsletters and information about Le Labo products, events and offers.</p>
+          <input type="text" name="emailAddress" placeholder="Enter your email address">
+          <a href="#">Sign Up</a>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="script/common.js"></script>
+
+  </body>
+</html>
